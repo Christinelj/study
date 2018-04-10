@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <form>
+        账号:<br>
+        <input type="text" id="account" value="">
+        <br> 密码:
+        <br>
+        <input type="password" id="accountPassword" value="">
+        <br><br>
+    </form>
+
+    <button id="myButton">登录</button>
+
+    <script>
+        document.getElementById("myButton").onclick = function () { verify() };
+        function verify() {
+            if (account.value == "123" && accountPassword.value == "123") {
+                alert("登录成功")
+            }
+            else {
+                document.getElementById("accountPassword").value = ""
+            }
+        }
+
+    </script>
+</body>
+
+</html>
